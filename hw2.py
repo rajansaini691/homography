@@ -33,6 +33,8 @@ class RawImage:
         self.image = cv2.imread(path)
         cv2.imshow(self.name, self.image)
         cv2.setMouseCallback(self.name, self.on_click)
+        cv2.moveWindow(self.name, 0, 0)
+        cv2.resizeWindow(self.name, 300, 300)
 
         # Possible states are WAITING, FINISHED
         self.state = "WAITING"
@@ -59,16 +61,18 @@ class RawImage:
 
         self.coords.append((x, y))
 
+        # TODO Draw dots on image
+
         if len(self.coords) == self.max_points:
             print(f"Coords: {self.coords}")
             # Remove callback
             cv2.setMouseCallback(self.name, lambda *args: None)
 
-            # Transition to FINISHED state
-            self.state = "FINISHED"
+            # Transition to COMPUTING state
+            self.state = "COMPUTING"
 
     def ready(self):
-        return self.state == "FINISHED"
+        return self.state != "WAITING"
 
 
 if __name__ == "__main__":
@@ -80,6 +84,7 @@ if __name__ == "__main__":
 
     # Number of common points
     num_points = 4
+
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hl:r:n:", ["limg=", "rimg="])
     except getopt.GetoptError:
@@ -100,7 +105,7 @@ if __name__ == "__main__":
     left = RawImage(leftimage, num_points, "left")
     right = RawImage(rightimage, num_points, "right")
 
-    while not left.ready() and not right.ready():
+    while not (left.ready() and right.ready()):
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
 
