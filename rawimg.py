@@ -71,3 +71,4 @@ def ginput(left_image, right_image):
             break
 
     cv2.destroyAllWindows()
+    return (left_image.coords, right_image.coords)
