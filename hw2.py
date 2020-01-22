@@ -4,9 +4,7 @@ Author: Rajan Saini
 
 Assignment description:
     - [done] Take two pictures as input
-    - Manually identify a set of corresponding points
-      - Prompt user for points
-      - Use matplotlib.pyplot.ginput
+    - Manually identify a set of corresponding points [done]
     - Solve the homography problem (compute the H matrix)
     - Apply the transformation on one of the images in the pair to synthesize
       the other image, and vice versa
