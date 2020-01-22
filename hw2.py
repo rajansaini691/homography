@@ -47,12 +47,6 @@ class RawImage:
         # Stores the coordinates clicked
         self.coords = []
 
-    def on_draw(self):
-        """
-        Draws the image to the screen
-        """
-        cv2.imshow(self.name, self.image)
-
     def on_click(self, event, x, y, flags, param):
         """
         Called when the image is clicked. Adds to the list of common
@@ -107,9 +101,7 @@ if __name__ == "__main__":
     right = RawImage(rightimage, num_points, "right")
 
     while not left.ready() and not right.ready():
-        # Polls every second, which is good enough for this assignment
-        # left.on_draw()
-        # right.on_draw()
         if cv2.waitKey(1) & 0xFF == ord("q"):
             break
+
     cv2.destroyAllWindows()
