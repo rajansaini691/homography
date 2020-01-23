@@ -1,9 +1,9 @@
 import cv2
 """
-Helper class to do all of the tedious interaction with OpenCV, like window
-management, event handling, waiting for user input. The goal is to provide the
-same interface as matlab, so that in the future I won't have to do any of the
-ugly stuff below.
+Contains helper classes and functions to do all of the tedious interaction with
+OpenCV, like window management, event handling, waiting for user input. The
+goal is to provide a nicer interface, so that in the future I won't have to do
+any of the ugly stuff below.
 """
 
 
