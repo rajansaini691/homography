@@ -42,16 +42,22 @@ class RawImage:
         if event != cv2.EVENT_LBUTTONDBLCLK:
             return
 
+        # Adds to list of coords
         self.coords.append((x, y))
 
-        # TODO Draw dots on image
+        # Draws a different-colored circle on each selected coordinate
+        b = 255 / self.max_points * len(self.coords)
+        g = 255 - b
+        dot_color = (b, g, 0)
+        cv2.circle(self.image, (x, y), 3, dot_color, -1, cv2.LINE_AA)
+        cv2.imshow(self.name, self.image)
 
+        # Transition out when enough points have been selectd
         if len(self.coords) == self.max_points:
             print(f"Coords: {self.coords}")
             # Remove callback
             cv2.setMouseCallback(self.name, lambda *args: None)
 
-            # Transition to COMPUTING state
             self.state = "COMPUTING"
 
     def ready(self):

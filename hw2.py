@@ -5,7 +5,10 @@ Author: Rajan Saini
 Assignment description:
     - [done] Take two pictures as input
     - [done] Manually identify a set of corresponding points
+      - [done] Color selected dots
     - Solve the homography problem (compute the H matrix)
+      - Create a system of equations
+      - Solve using solution of minimal norm
     - Apply the transformation on one of the images in the pair to synthesize
       the other image, and vice versa
     - Repeat this for two other image pair examples
@@ -53,3 +56,4 @@ if __name__ == "__main__":
     right = RawImage(rightimage, num_points, "right")
 
     coords = ginput(left, right)
+    print(coords)
