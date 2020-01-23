@@ -9,8 +9,8 @@ Assignment description:
     - Solve the homography problem (compute the H matrix)
       - [done] Create a system of equations
       - [done] Solve using solution of minimal norm
-    - Apply the transformation on one of the images in the pair to synthesize
-      the other image, and vice versa
+    - [done] Apply the transformation on one of the images in the pair to
+      synthesize the other image, and vice versa
     - Repeat this for two other image pair examples
 
 Report should contain:
@@ -23,6 +23,7 @@ Report should contain:
 import sys
 import getopt
 import numpy as np
+import cv2
 from helpers import RawImage, ginput
 
 
@@ -66,7 +67,9 @@ def get_H(original, transformed):
 
     # Calculate minimum norm solution for H
     h = np.linalg.lstsq(A, b, rcond=None)
-    return h[0]
+    h = np.append(h[0], 1)
+    h = h.reshape((3, 3))
+    return h
 
 
 if __name__ == "__main__":
@@ -104,7 +107,19 @@ if __name__ == "__main__":
     coords = ginput(left, right)
 
     """
-    Calculate H Matrix
+    Calculate H Matrices going both ways
     """
-    h = get_H(coords[0], coords[1])
-    print(h)
+    # Transforming left to right
+    H_lr = get_H(coords[0], coords[1])
+
+    # Transforming right to left
+    H_rl = get_H(coords[1], coords[0])
+
+    """
+    Warp the images
+    """
+    left.transform(H_lr, right.image)
+    right.transform(H_rl, left.image)
+
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()

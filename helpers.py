@@ -68,6 +68,19 @@ class RawImage:
     def ready(self):
         return self.state != "WAITING"
 
+    def transform(self, H, target):
+        """
+        Transforms the current image in the likeness of the target image
+
+        Parameters:
+            H           The homography matrix
+            target      The target image whose perspective we are trying to
+                        imitate
+        """
+        im_out = cv2.warpPerspective(self.image, H,
+                                     (target.shape[1], target.shape[0]))
+        cv2.imshow(self.name + "_transformed", im_out)
+
 
 def ginput(left_image, right_image):
     """
