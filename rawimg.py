@@ -54,7 +54,6 @@ class RawImage:
 
         # Transition out when enough points have been selectd
         if len(self.coords) == self.max_points:
-            print(f"Coords: {self.coords}")
             # Remove callback
             cv2.setMouseCallback(self.name, lambda *args: None)
 
