@@ -22,7 +22,7 @@ Report should contain:
 """
 import sys
 import getopt
-from rawimg import RawImage, ginput
+from helpers import RawImage, ginput
 
 
 if __name__ == "__main__":

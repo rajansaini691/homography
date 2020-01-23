@@ -50,6 +50,12 @@ class RawImage:
         g = 255 - b
         dot_color = (b, g, 0)
         cv2.circle(self.image, (x, y), 3, dot_color, -1, cv2.LINE_AA)
+
+        # Labels the point
+        cv2.putText(self.image, f"({x}, {y})", (x, y),
+                    cv2.FONT_HERSHEY_PLAIN, 2, dot_color)
+
+        # Refresh the screen
         cv2.imshow(self.name, self.image)
 
         # Transition out when enough points have been selectd
