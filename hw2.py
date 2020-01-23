@@ -8,7 +8,7 @@ Assignment description:
       - [done] Color selected dots
     - Solve the homography problem (compute the H matrix)
       - [done] Create a system of equations
-      - Solve using solution of minimal norm
+      - [done] Solve using solution of minimal norm
     - Apply the transformation on one of the images in the pair to synthesize
       the other image, and vice versa
     - Repeat this for two other image pair examples
@@ -64,7 +64,9 @@ def get_H(original, transformed):
     A = np.array(A)
     b = np.array(b)
 
-    # Solve for H
+    # Calculate minimum norm solution for H
+    h = np.linalg.lstsq(A, b, rcond=None)
+    return h[0]
 
 
 if __name__ == "__main__":
@@ -104,4 +106,5 @@ if __name__ == "__main__":
     """
     Calculate H Matrix
     """
-    get_H(coords[0], coords[1])
+    h = get_H(coords[0], coords[1])
+    print(h)
