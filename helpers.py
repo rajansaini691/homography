@@ -14,10 +14,11 @@ class RawImage:
         """
         self.name = name
         self.image = cv2.imread(path)
+        cv2.namedWindow(self.name, cv2.WINDOW_NORMAL)
+        cv2.resizeWindow(self.name, 300, 300)
+        cv2.moveWindow(self.name, 0, 0)
         cv2.imshow(self.name, self.image)
         cv2.setMouseCallback(self.name, self.on_click)
-        cv2.moveWindow(self.name, 0, 0)
-        cv2.resizeWindow(self.name, 300, 300)
 
         # Possible states are WAITING, FINISHED
         self.state = "WAITING"
@@ -77,9 +78,17 @@ class RawImage:
             target      The target image whose perspective we are trying to
                         imitate
         """
-        im_out = cv2.warpPerspective(self.image, H,
-                                     (target.shape[1], target.shape[0]))
-        cv2.imshow(self.name + "_transformed", im_out)
+        self.im_trans = cv2.warpPerspective(self.image, H,
+                                            (target.shape[1], target.shape[0]))
+        cv2.imshow(self.name, self.im_trans)
+
+    def write(self, path):
+        """
+        Writes the images to the given path
+        """
+        print(path + self.name + ".jpg")
+        cv2.imwrite(path + self.name + "_transformed.jpg", self.im_trans)
+        cv2.imwrite(path + self.name + ".jpg", self.image)
 
 
 def ginput(left_image, right_image):

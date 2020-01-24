@@ -1,2 +1,2 @@
 
-python3 ./hw2.py -l ./results/building/left.jpg -r ./results/building/right.jpg -n 5
+python3 ./hw2.py -l ./input/building/left.jpg -r ./input/building/right.jpg -n 8 --data-path ./results/building/

@@ -82,10 +82,15 @@ if __name__ == "__main__":
     # Number of common points
     num_points = 4
 
+    # Path to directory to generate the report
+    report_path = ""
+
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hl:r:n:", ["limg=", "rimg="])
+        opts, args = getopt.getopt(sys.argv[1:], "hl:r:n:", ["limg=", "rimg=",
+                                   "data-path="])
     except getopt.GetoptError:
-        print("Usage: hw2.py -l <leftimage> -r <rightimage> -n <numpoints>")
+        print("""Usage: hw2.py -l <leftimage> -r <rightimage> -n <numpoints>
+                 --data-path <path>""")
         sys.exit(2)
 
     for opt, arg in opts:
@@ -95,6 +100,14 @@ if __name__ == "__main__":
             rightimage = arg
         elif opt in ("-n"):
             num_points = arg
+        elif opt in ("--data-path"):
+            report_path = arg
+
+    if report_path == "":
+        print("woeijf")
+        exit(1)
+    else:
+        print(report_path)
 
     """
     Get coordinates
@@ -123,3 +136,9 @@ if __name__ == "__main__":
 
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+
+    """
+    Generate the report (puts all of the data into a single location)
+    """
+    left.write(report_path)
+    right.write(report_path)
