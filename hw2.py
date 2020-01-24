@@ -142,3 +142,18 @@ if __name__ == "__main__":
     """
     left.write(report_path)
     right.write(report_path)
+
+    f = open(report_path + "report.txt", "w")
+    f.write("Points on the left image:\n")
+    f.write(str(coords[0]))
+    f.write("\n")
+    f.write("Points on the right image:\n")
+    f.write(str(coords[1]))
+    f.write("\n")
+    f.write("H matrix when transforming left to match right:\n")
+    f.write(str(H_lr))
+    f.write("\n")
+    f.write("H matrix when transforming right to match left:\n")
+    f.write(str(H_rl))
+    f.write("\n")
+    f.close()
