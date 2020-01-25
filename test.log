@@ -1,0 +1,245 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.15)  24 JAN 2020 17:07
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+) (./test.aux)
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count87
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count88
+\nofMParguments=\count89
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count90
+\MPscratchDim=\dimen106
+\MPnumerator=\count91
+\makeMPintoPDFobject=\count92
+\everyMPtoPDFconversion=\toks16
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 7.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 7.
+
+Overfull \hbox (31.27753pt too wide) in paragraph at lines 28--40
+\OT1/cmr/m/n/10 05 1.00000000e+00]] H ma-trix when trans-form-ing right to match left: [[ 1.89031295e+00
+ []
+
+
+Overfull \hbox (22.22313pt too wide) in paragraph at lines 28--40
+\OT1/cmr/m/n/10 1.21536422e-01 -1.11487360e+01] [ 6.62536716e-01 1.43342651e+00 -5.83816082e+02]
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 41.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
+<./results/building/left.jpg, id=1, 1496.59125pt x 969.6225pt>
+File: ./results/building/left.jpg Graphic file (type jpg)
+<use ./results/building/left.jpg>
+Package pdftex.def Info: ./results/building/left.jpg  used on input line 44.
+(pdftex.def)             Requested size: 345.0pt x 223.51152pt.
+<./results/building/right.jpg, id=2, 1573.88pt x 1116.17pt>
+File: ./results/building/right.jpg Graphic file (type jpg)
+<use ./results/building/right.jpg>
+Package pdftex.def Info: ./results/building/right.jpg  used on input line 46.
+(pdftex.def)             Requested size: 345.0pt x 244.6555pt.
+<./results/building/left_transformed.jpg, id=3, 1573.88pt x 1116.17pt>
+File: ./results/building/left_transformed.jpg Graphic file (type jpg)
+<use ./results/building/left_transformed.jpg>
+Package pdftex.def Info: ./results/building/left_transformed.jpg  used on input line 48.
+(pdftex.def)             Requested size: 345.0pt x 244.6555pt.
+<./results/building/right_transformed.jpg, id=4, 1496.59125pt x 969.6225pt>
+File: ./results/building/right_transformed.jpg Graphic file (type jpg)
+<use ./results/building/right_transformed.jpg>
+Package pdftex.def Info: ./results/building/right_transformed.jpg  used on input line 50.
+(pdftex.def)             Requested size: 345.0pt x 223.51152pt.
+
+Overfull \hbox (54.889pt too wide) in paragraph at lines 43--51
+\OT1/cmr/m/n/10 Left orig-i-nal []
+ []
+
+
+Overfull \hbox (61.55568pt too wide) in paragraph at lines 43--51
+\OT1/cmr/m/n/10 Right orig-i-nal []
+ []
+
+
+Overfull \hbox (108.8891pt too wide) in paragraph at lines 43--51
+\OT1/cmr/m/n/10 Left trans-formed to right []
+ []
+
+
+Overfull \hbox (108.86131pt too wide) in paragraph at lines 43--51
+\OT1/cmr/m/n/10 Right trans-formed to left [] 
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./results/building/left.jpg> <./results/building/right.jpg>]
+<./results/voices_of_fire/far.jpg, id=18, 262.9825pt x 192.72pt>
+File: ./results/voices_of_fire/far.jpg Graphic file (type jpg)
+<use ./results/voices_of_fire/far.jpg>
+Package pdftex.def Info: ./results/voices_of_fire/far.jpg  used on input line 65.
+(pdftex.def)             Requested size: 345.0pt x 252.83556pt.
+<./results/voices_of_fire/side.jpg, id=19, 602.25pt x 903.375pt>
+File: ./results/voices_of_fire/side.jpg Graphic file (type jpg)
+<use ./results/voices_of_fire/side.jpg>
+Package pdftex.def Info: ./results/voices_of_fire/side.jpg  used on input line 67.
+(pdftex.def)             Requested size: 345.0pt x 517.52057pt.
+
+Overfull \hbox (18.33424pt too wide) in paragraph at lines 52--69
+\OT1/cmr/m/n/10 8.20039118e+02] [ 2.13031357e+00 1.00643095e+01 -4.93141013e+02] [ 4.35641405e-
+ []
+
+
+Overfull \hbox (23.61198pt too wide) in paragraph at lines 52--69
+\OT1/cmr/m/n/10 left: [[ 6.61115198e-02 3.64662373e-02 7.20229606e+01] [-7.14122458e-02 3.24562974e-
+ []
+
+
+Overfull \hbox (18.33337pt too wide) in paragraph at lines 52--69
+\OT1/cmr/m/n/10 i-nal []
+ []
+
+
+Overfull \hbox (55.58345pt too wide) in paragraph at lines 52--69
+\OT1/cmr/m/n/10 Side orig-i-nal []
+ []
+
+[3 <./results/building/left_transformed.jpg> <./results/building/right_transformed.jpg>] [4 <./results/voices_of_fire/far.jpg>]
+<./results/voices_of_fire/far_transformed.jpg, id=26, 602.25pt x 903.375pt>
+File: ./results/voices_of_fire/far_transformed.jpg Graphic file (type jpg)
+<use ./results/voices_of_fire/far_transformed.jpg>
+Package pdftex.def Info: ./results/voices_of_fire/far_transformed.jpg  used on input line 70.
+(pdftex.def)             Requested size: 345.0pt x 517.52057pt.
+<./results/voices_of_fire/side_transformed.jpg, id=27, 262.9825pt x 192.72pt>
+File: ./results/voices_of_fire/side_transformed.jpg Graphic file (type jpg)
+<use ./results/voices_of_fire/side_transformed.jpg>
+Package pdftex.def Info: ./results/voices_of_fire/side_transformed.jpg  used on input line 72.
+(pdftex.def)             Requested size: 345.0pt x 252.83556pt.
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 70--73
+[][]
+ []
+
+
+Overfull \hbox (100.69464pt too wide) in paragraph at lines 70--73
+\OT1/cmr/m/n/10 Side trans-formed to far [] 
+ []
+
+[5 <./results/voices_of_fire/side.jpg>] [6 <./results/voices_of_fire/far_transformed.jpg>] [7 <./results/voices_of_fire/side_transformed.jpg>] (./test.aux) ) 
+Here is how much of TeX's memory you used:
+ 1494 strings out of 494847
+ 22269 string characters out of 6179079
+ 73711 words of memory out of 5000000
+ 4818 multiletter control sequences out of 15000+600000
+ 7587 words of font info for 27 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 41i,6n,25p,271b,189s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on test.pdf (7 pages, 1918585 bytes).
+PDF statistics:
+ 56 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
